@@ -1,0 +1,54 @@
+.cards-brand-section{
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(72,45,144,1) 100%);
+    &__header{
+        text-align: center;
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding: 2em;
+        background: #533AA1;
+        border-radius: 3px;
+        font-family: 'Mochiy Pop One', sans-serif;
+    }
+    &__container{
+        position: relative;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+
+        @media (max-width: 728px) {
+            display: grid;
+
+        }
+
+    }
+    .cards-brand {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+        &__article{
+            width: 100%;
+            height: 100%;
+        }
+        &__logo-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        & img{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

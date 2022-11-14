@@ -1,0 +1,12 @@
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+body{
+    box-sizing: border-box;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(72,45,144,1) 100%);
+}
+

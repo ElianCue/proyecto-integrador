@@ -1,0 +1,184 @@
+.form-contact{
+    color: white;
+    padding: 50px;
+    background-color: hsl(255, 55%, 31%);
+    width: 100%;
+    max-width: 1100px;
+    margin: 90px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    grid-gap: 50px;
+    box-shadow: 0 0 20px 15px hsl(262, 74%, 21%);
+    border-radius: 10px;
+    @media (max-width: 728px) {
+        display: flex;
+        flex-direction: column;
+    }
+    & h2{
+        margin-bottom: 15px;
+        font-size: 35px;
+        font-family: 'Mochiy Pop One', sans-serif;
+        @media (max-width: 728px) {
+            font-size: 30px;
+        }
+    }
+    & p{
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+    & a{
+        font-size: 17px;
+        display: inline-block;
+        text-decoration: none;
+        width: 100%;
+        margin-bottom: 15px;
+        color: white;
+        font-weight: 700;
+        & i{
+            color: #3f1488;
+            margin-bottom: 10px;
+        }
+    }
+    & form{
+        padding-top: 25px;
+
+    }
+    
+    & form .camp, textarea{
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 15px;
+        border: 1px solid #dbdbdb;
+        margin-bottom: 20px;
+        border-radius: 3px;
+        outline: none;
+    }
+
+    & form textarea{
+        max-width: 530px;
+        min-width: 530px;
+        min-height: 140px;
+        max-height: 150px;
+        @media (max-width: 728px) {
+            max-width: 430px;
+            min-width: 500px;
+            min-height: 40px;
+            max-height: 50px;
+        }
+    }
+
+    & .button-submit{
+        padding: 15px;
+        font-size: 16px;
+        border: none;
+        outline: 0px;
+        background: #3f1488;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 300ms ease;
+
+        &:hover{
+            background: hsl(262, 74%, 42%);
+        }
+    }
+}
+
+.form-product{
+    color: white;
+    background-color: hsl(255, 55%, 31%);
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+    box-shadow: 0 0 20px 15px hsl(262, 74%, 21%);
+    border-radius: 10px;
+
+
+    &__content form{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        & label{
+            font-family: 'Mochiy Pop One', sans-serif;
+            font-size: 18px;
+            padding: 10px;
+            text-align: center;
+        }
+        & input, textarea{
+            width: 100%;
+            padding: 15px 10px;
+            font-size: 15px;
+            border: 1px solid #dbdbdb;
+            margin-bottom: 20px;
+            border-radius: 3px;
+            outline: none;
+            resize: none;
+            @media (max-width: 728px) {
+                width:80vw;
+                margin: 20px;
+            }
+        }
+        & .range-age{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & input{
+                width: 400px;
+
+                @media (max-width: 728px) {
+                    width: 80vw;
+    
+                }
+            }
+        }
+    }
+    .double_row{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(2,2fr);
+        & .shipping{
+            display: flex;
+            justify-items: center;
+            align-items: baseline;
+            & input{
+                width: 50px;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.invalid{
+    background-color: hsl(0, 100%, 88%);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flat_cross_icon.svg/1024px-Flat_cross_icon.svg.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.valid{
+    background-color: hsl(112, 100%, 88%);
+    background-image: url(https://www.pngall.com/wp-content/uploads/12/Green-Check-Transparent.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.invalidMessage{
+    text-align: center;
+    color: hsl(0, 100%, 59%);
+    font-size: 1em;
+}

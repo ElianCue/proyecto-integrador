@@ -1,0 +1,46 @@
+
+    <section class="form-product">
+        <div class="form-product__content">
+            <form action="" id="form-product__alta">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Ingresa el nombre del producto" class="input-prod">
+                <label for="input">Precio</label>
+                <input type="number" name="price" id="price" placeholder="Ingresa el precio del producto" class="input-prod">
+                <label for="stock">Stock</label>
+                <input type="number" name="stock" id="stock" placeholder="Ingresa el stock del producto" class="input-prod">
+                <div class="double_row">
+                    <div class="form-product__brand">
+                        <label for="marca">Marca</label>
+                        <select id="brand">
+                            <option disabled value>Selecciona una marca</option>
+                            <option value="hasbro">Hasbro</option>
+                            <option value="mattel">Mattel</option>
+                            <option value="lego">Lego</option>
+                            <option value="juliana">Juliana</option>
+                            <option value="toyco">ToyCo</option>
+                            <option value="fisherprice">Fisher Price</option>
+                        </select>
+                    </div>
+                    <div class="shipping">
+                        <label for="shipping">Envio sin cargo</label>
+                        <input type="checkbox" name="shipping" id="shipping">
+                    </div>
+                </div>
+                <div class="range-age">
+                    <label for="range-age__min">Rango edad minimo desde</label>
+                    <input type="text" min="1" max="20" id="range-age__min"></label>
+                    <label for="range-age__max">Hasta</label>
+                    <input type="text" min="1" max="20" id="range-age__max"></label>
+                </div>
+                <label for="description-short">Descripcion corta</label>
+                <textarea name="description" id="description-short"></textarea>
+                <label for="description-large">Descripcion larga</label>
+                <textarea name="description" id="description-large"></textarea>
+                <label for="image">Foto</label>
+                <input type="file" id="image"></input>
+                <input type="submit" class="button-submit"></input>
+            </form>
+        </div>
+    </section>
+    <script src="js/product-validation.js"></script>
+    </body>

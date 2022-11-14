@@ -1,0 +1,98 @@
+.cards-container{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px auto;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 100px;
+    overflow: hidden;  
+    & img{
+        width: 90%;
+    }
+    
+}
+
+.card{
+    width: 250px;
+    height: 450px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    flex-grow: 1;
+    background-color: #f9f8f8;
+    box-shadow: 
+    0 1px 5px rgba(0, 0, 0, .2),
+    0 0 3px rgba(0, 0, 0, .4);
+    border-radius: 5px 5px 0 0;
+    transition: all .2s;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    padding:7px;
+
+    // &__content{
+    //     width: 100%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     padding: 1em;
+    //     margin-bottom: 2em;
+    &__image-container{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        justify-content: center;
+        border-radius: 4px ;
+        background-color: hsl(210, 16%, 97%);
+    }
+
+    &__image{
+        margin: auto;
+        width: 220px;
+        height: 200px;
+        display: block;
+        border-radius: 4px ;
+        background-color: hsl(210, 16%, 97%);
+    }
+    &__description{
+        height: 70px;
+        overflow: hidden;
+        text-overflow: ellipsis;        
+    }
+    &__bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+        &-price{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #FFC551;
+        }
+    }
+    
+    &__link{
+        background-color: #FFC551;
+        text-decoration: none;   
+        font-style: bold;
+        color: white;
+        border-radius: 1px;
+        padding: 5px;
+        width: 50px;
+        &:hover{
+            background-color: hsl(40, 100%, 56%);
+            transform: scale(1) ;
+            transform-origin: bottom;
+        }
+    }
+    
+    &:hover{
+        transform: scale(1.05);
+        transform-origin: bottom;
+    }
+    
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetería Cósmica</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="Logo-jugueteria.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/8f89df6688.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <input type="checkbox" id="main-nav-toggle" class="main-nav-toggle">
+            <header class="main-header">
+                <div class="main-header__logo-container">
+                    <a href="#/inicio"><img src="/css/img/logo/Logo-jugueteria.png" alt="logo"></a>
+                </div>
+                
+                <div class="main-header__search-form-container">
+                        <input type="text" placeholder="Buscar...">
+                        <button class="fa fa-search"></button>
+                </div>
+                
+                <div class="main-header__cart-button-container">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart-box">
+                        <div class="cart-box__button-close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <ul id="item">
+                            <img src="" alt="">
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="main-header__hamburguer-button-container">
+                    <label class="hamburguer-button" for="main-nav-toggle" title="Expandir barra de navegación">
+                        <span class="hamburguer-button__top-bread "></span>
+                        <span class="hamburguer-button__meat"></span>
+                        <span class="hamburguer-button__bottom-bread"></span>
+                    </label>
+                </div>
+                
+                <div class="main-header__main-nav-container">
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#/inicio">Inicio</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#/alta">Alta</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#/contacto">Contacto</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#/nosotros">Nosotros</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>    
+    </header>
+    
+
+
+    <main></main>
+
+    <footer class="main-footer">
+        <div class="main-footer__info">
+            <ul>
+                <h3>Juguetería Cósmica</h3>
+                <li>159 n°42</li>
+                <li>La Plata</li>
+                <li>Tel: (221) 431-9344</li>
+                <li>Mail: contacto@jugueteríacosmica.com.ar</li>
+            </ul>
+            <ul>
+                <h3>Juguetería Cósmica</h3>
+                <li>21 n°1231</li>
+                <li>La Plata</li>
+                <li>Tel: (221) 451-4523</li>
+                <li>Mail: contacto@jugueteríacosmica.com.ar</li>
+            </ul>
+            <ul>
+                <h3>Juguetería Cósmica</h3>
+                <li>7 n°1411</li>
+                <li>La Plata</li>
+                <li>Tel: (221) 461-2334</li>
+                <li>Mail: contacto@jugueteríacosmica.com.ar</li>
+            </ul>
+        </div>
+        <div class="main-footer__social">
+            <ul>
+                <h3>Seguinos en nuestras redes!</h3>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/addons/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendors/handlebars-v4.7.7.js"></script>
+</body>

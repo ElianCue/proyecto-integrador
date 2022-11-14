@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: #482D9B;
+    align-items: center;    
+    justify-content: space-between;
+    @media (max-width: 768px) {
+        justify-content: space-between;
+    }
+    &__logo-container {
+        flex-basis: 5em;
+        margin-left: 10px;
+        & a img{
+            width: 100%;
+        }
+    & i{
+        font-size: 60px;
+        color: cyan;
+    }
+    }
+
+    &__search-form-container {
+        border-radius: 10%;
+        display: flex;
+        flex-basis: 25em;
+        flex-grow: 0;
+        flex-shrink: 2;
+        color: black;
+        & button{
+            background: white ;
+            border: none;
+            border-radius: 10%;
+        }
+        @media (min-width: 768px){
+            order: 2;
+            flex-basis: 15em;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        @media (max-width: 768px){
+            display: none;
+        }
+    }
+    
+    &__cart-button-container {
+        color: white;
+        text-align: center;
+        padding: 3em 1em;
+        & i{
+            font-size: 30px;
+        }
+
+        @media (min-width: 768px){
+            order: 3;
+        }
+    }
+    
+    &__hamburguer-button-container {
+        padding: 1em;
+        @media (min-width: 768px){
+            display: none;
+        }
+    }
+    
+    
+    
+    &__main-nav-container{
+        flex-basis: 100%;
+        display: none;
+        flex-grow: 1;
+        z-index: 1;
+        @media (min-width: 768px){
+            flex-basis: auto;
+            flex-grow: 1;
+            order: 1;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            background-color: hsl(262, 74%, 42%);
+        }
+    }
+    
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
