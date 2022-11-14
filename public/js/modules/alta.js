@@ -6,9 +6,14 @@ class Alta{
     static btnCreate
 
     static validators = {
-        'name':/^[a-zA-Z\-]+$/,
-        'price':/^[0-9]+$/,
-        'description':/^[\wáéíóúüÁÉÍÓÚÜ ¿?¡!.,:-]{1,200}$/,
+        'name':/^[a-zA-Z\-]{1,60}$/,
+        'brand':/^[a-zA-Z\-]{1,15}$/,
+        'price':/^[0-4]+$/,
+        'stock':/^[0-4]+$/,
+        'description-short':/^[\wáéíóúüÁÉÍÓÚÜ ¿?¡!.,:-]{1,100}$/,
+        'description-large':/^[\wáéíóúüÁÉÍÓÚÜ ¿?¡!.,:-]{1,200}$/,
+        'agemin':/^[0-4]+$/,
+        'agemax':/^[0-4]+$/,
     };
 
     static emptyForm(){
@@ -45,6 +50,12 @@ class Alta{
         return productSave;
     }
 
+    static async saveProduct(product) {
+        const savedProduct = await productController.saveProduct(product);
+        const products = await productController.getProducts();
+        return savedProduct;
+    }
+
     static async addFormEvents(){
         Alta.form.addEventListener('submit', async e =>{
             e.preventDefault();
@@ -60,7 +71,7 @@ class Alta{
     static async init(){
         Alta.form = document.getElementById('form-product__alta');
         Alta.fields= Alta.form.querySelectorAll('input, textarea');
-
+        Alta.btnCreate= Alta.form.querySelector('.button-submit');
         Alta.addFormEvents();
 
         const products = await productController.getProducts();
